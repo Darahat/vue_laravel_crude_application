@@ -1,6 +1,5 @@
 <template>
  <v-container grid-list-md offset-sm3 >
-    <!-- <search/> -->
     <v-layout row wrap>
       <v-flex  style="cursor: pointer;" xs12 sm4 v-for="post in posts" :key="post.id">
           <v-card width="300px"  >
@@ -16,21 +15,10 @@
                 <v-layout fill-height>
                   <v-flex xs12 align-end flexbox>
                     <span class="subheading grey--text">{{post.title}}</span>
-                    <!-- <p class="black--text">{{user.username}}</p> -->
                   </v-flex>
                 </v-layout>
               </v-container>
             <v-card-actions>
-            
-              <!-- <v-badge color="pink" left>
-                <span slot="badge">0</span>
-                <v-btn icon small right>
-                  <v-icon>favorite</v-icon>
-                </v-btn>
-              </v-badge>
-              <v-btn icon small right>
-                <v-icon>bookmark</v-icon>
-              </v-btn> -->
 <v-btn> 
               <router-link
                 style="text-decoration:none;margin:2px"
